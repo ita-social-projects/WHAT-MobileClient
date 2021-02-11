@@ -8,14 +8,10 @@ Mobile client for WHAT project.
 ---
 
 ## Table of Contents
-
-> If your `README` has a lot of info, section headers might be nice.
-
 - [About the project](#About-the-project)
 - [Prerequisites](#Prerequisites)
 - [Documentation](#Documentation)
 - [License](#license)
-
 ---
 
 ## About the project
@@ -32,4 +28,4 @@ To be added
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](LICENSE)**
-- Copyright 2021 © <a href="https://softserve.academy/" target="_blank"> SoftServe IT Academy</a>.
+- Copyright 2021 © [SoftServe IT Academy](https://softserve.academy).
