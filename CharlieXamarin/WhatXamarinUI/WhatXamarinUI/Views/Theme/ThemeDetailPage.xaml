@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:WhatXamarinUI.ViewModels" x:DataType="viewmodels:ThemeDetailViewModel"
+             x:Class="WhatXamarinUI.Views.ThemeDetailPage"
+             Title="{Binding Title}">
+
+    <StackLayout Spacing="20" Padding="15">
+        <Label Text="Id:" FontSize="Medium" />
+        <Label Text="{Binding ItemId}" FontSize="Small"/>
+        <Label Text="Description:" FontSize="Medium" />
+        <Entry Text="{Binding Name, Mode=TwoWay}" FontSize="Small" IsEnabled="{Binding IsEditable}"/>
+
+        <Grid MinimumHeightRequest="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Enable/Disable"
+                    Grid.Column="0"
+                    Command="{Binding ChangeEditability}"/>
+
+            <Button Text="Edit"
+                    Grid.Column="1"
+                    Command="{Binding EditTheme}"/>
+            
+        </Grid>
+        <Button Text="Delete"
+                    Command="{Binding DeleteTheme}"/>
+    </StackLayout>
+
+</ContentPage>

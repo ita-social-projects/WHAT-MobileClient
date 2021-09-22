@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WhatXamarinUI.Views.NewThemePage"
+             Shell.PresentationMode="ModalAnimated"
+             Title="{Binding Title}"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" xmlns:viewmodels="clr-namespace:WhatXamarinUI.ViewModels" x:DataType="viewmodels:NewThemeViewModel"
+             ios:Page.UseSafeArea="true">
+    
+    
+    <StackLayout Spacing="3" Padding="15">
+        <Label Text="Theme name" FontSize="Medium" />
+        <Entry Text="{Binding Name, Mode=TwoWay}" FontSize="Medium" />
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
+            <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+        </StackLayout>
+    </StackLayout>
+    
+    
+</ContentPage>
